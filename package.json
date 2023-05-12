@@ -8,7 +8,8 @@
     "knex": "node --loader tsx ./node_modules/.bin/knex",
     "migrate:create": "npm run knex -- migrate:make --migrations-directory ./db/migrations -x ts",
     "migrate:latest": "npm run knex -- migrate:latest --migrations-directory ./db/migrations -x ts",
-    "lint": "eslint src --ext .ts --fix"
+    "lint": "eslint src --ext .ts --fix",
+    "test": "vitest"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,8 @@
     "@types/node": "^18.16.3",
     "eslint": "^8.39.0",
     "tsx": "^3.12.7",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "vitest": "^0.31.0"
   },
   "dependencies": {
     "@fastify/cookie": "^8.3.0",
